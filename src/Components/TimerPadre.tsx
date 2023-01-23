@@ -21,7 +21,7 @@ export const TimerPadre = () => {
         2000
         </button>
 
-        <Timer/>
+        <Timer milisegundos = {milisegundos} />
         </>
     )
 }

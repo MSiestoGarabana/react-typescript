@@ -1,8 +1,14 @@
 import {useEffect, useState} from "react";
 
-export const Timer = () => {
+type TimerArgs = {
+    milisegundos: number
+}
+
+export const Timer = ( args: any) => {
     
     const[segundos, setSegundos] = useState(0)
+
+console.log(args)
 
     useEffect( ()=>{
        setTimeout(() => setSegundos( segundos + 1) , 1000);
