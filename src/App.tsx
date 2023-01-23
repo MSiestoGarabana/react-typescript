@@ -1,4 +1,5 @@
-import { Counter } from "./Components/Countes";
+import { Counter } from "./Components/Counter";
+import { Usuario } from "./Components/Usuario";
 
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
       <h1>Hola Mundo - TS</h1>
       <hr/>
       <Counter/>
+
+      <Usuario/>
     </>
   );
 }
