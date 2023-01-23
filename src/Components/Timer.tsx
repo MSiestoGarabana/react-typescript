@@ -1,18 +1,19 @@
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 type TimerArgs = {
-    milisegundos: number
+    milisegundos: number,
+   
 }
 
-export const Timer = ( args: any) => {
+export const Timer = ( { milisegundos }: TimerArgs) => {
     
     const[segundos, setSegundos] = useState(0)
-
-console.log(args)
+    const ref = useRef<NodeJS.Timeout>()    
 
     useEffect( ()=>{
-       setTimeout(() => setSegundos( segundos + 1) , 1000);
-    }, [segundos])
+       ref.current && clearInterval( ref.current )
+       ref.current = setTimeout(() => setSegundos( segundos + 1) , milisegundos);
+    }, [segundos, milisegundos])
 
     return (
         <>
