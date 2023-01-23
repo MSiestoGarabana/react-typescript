@@ -1,6 +1,6 @@
 # React + TypeScript
 
-So, I´m following [Fernando Herrera´s](https://github.com/Klerith) tutorial to take my first steps with TypeScript.
+So, I´m following [Fernando Herrera](https://github.com/Klerith)´s tutorial to take my first steps with TypeScript.
 
 ### Thanks for such useful content Fernando!
 
