@@ -5,6 +5,8 @@ import { TimerPadre } from "./Components/TimerPadre";
 
 import { ContadorRed } from "./Components/ContadorRed";
 
+import { Formulario } from "./Components/Formulario";
+
 
 function App() {
   return (
@@ -26,6 +28,18 @@ function App() {
       <hr/>
       <ContadorRed/>
 
+      <h2>CustomHooks:</h2>
+      <hr/>
+      <Formulario/>
+
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
     </>
   );
