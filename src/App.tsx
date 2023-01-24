@@ -6,6 +6,7 @@ import { TimerPadre } from "./Components/TimerPadre";
 import { ContadorRed } from "./Components/ContadorRed";
 
 import { Formulario } from "./Components/Formulario";
+import { Formulario2 } from "./Components/Formulario2";
 
 
 function App() {
@@ -31,6 +32,10 @@ function App() {
       <h2>CustomHooks:</h2>
       <hr/>
       <Formulario/>
+
+      <br/>
+
+      <Formulario2/>
 
 
       <br/>
