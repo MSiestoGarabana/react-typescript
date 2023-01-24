@@ -7,6 +7,8 @@ export const Formulario = () => {
       nombre: 'Miguel Siesto '
     });  
 
+    const {email, nombre} = formulario;
+
     //const [formulario, setFormulario]= useState({
     //  email: '',
     //  nombre: ''
@@ -28,7 +30,7 @@ export const Formulario = () => {
             <input type="email"
                    className="form-control"
                    name="email"
-                   value={ formulario.email }
+                   value={ email }
                    onChange={ handleChange }
                    />
         </div>
@@ -39,7 +41,7 @@ export const Formulario = () => {
             <input type="text"
                    className="form-control"
                    name="nombre"
-                   value={ formulario.nombre }
+                   value={ nombre }
                    onChange ={ handleChange}
                    />
         </div>
