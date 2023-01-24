@@ -1,8 +1,8 @@
 import { useState, ChangeEvent } from "react";
 
 
-
-export const useForm = ( initState: any) => {
+export function useForm<T>( initState:T ){
+   
     
     const [formulario, setFormulario]= useState(initState);
 
