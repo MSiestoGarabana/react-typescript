@@ -15,6 +15,7 @@ import { useState, ChangeEvent } from "react";
     }
     return {
         formulario,
-        handleChange
+        handleChange,
+        ...formulario
     }
 }
