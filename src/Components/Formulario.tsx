@@ -1,10 +1,17 @@
 import { useForm } from "../hooks/useForm"
 
+interface FormData {
+      email: string;
+      nombre: string;
+      edad: number
+}
+
 export const Formulario = () => {
   
-    const {formulario, handleChange } = useForm({
+    const {formulario, handleChange } = useForm<FormData>({
       email: 'msiesto.garabana.dev@gmail.com',
-      nombre: 'Miguel Siesto '
+      nombre: 'Miguel Siesto ',
+      edad: 35
     });  
 
     const {email, nombre} = formulario;
