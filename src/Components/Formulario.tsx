@@ -34,7 +34,7 @@ export const Formulario = () => {
             <input type="text"
                    className="form-control"
                    name="nombre"
-                   onChange={ handleChange}
+                   onChange ={ handleChange}
                    />
         </div>
 
