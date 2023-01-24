@@ -1,9 +1,8 @@
 import { useState, ChangeEvent } from "react";
 
 
-export function useForm<T>( initState:T ){
-   
-    
+// export function useForm<T>( initState:T ){
+   export const useForm = <T extends Object>(initState: T) => {
     const [formulario, setFormulario]= useState(initState);
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
