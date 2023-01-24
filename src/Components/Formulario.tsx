@@ -14,7 +14,7 @@ export const Formulario = () => {
       edad: 35
     });  
 
-    const {email, nombre} = formulario;
+    const {email, nombre, edad} = formulario;
 
     //const [formulario, setFormulario]= useState({
     //  email: '',
@@ -49,6 +49,16 @@ export const Formulario = () => {
                    className="form-control"
                    name="nombre"
                    value={ nombre }
+                   onChange ={ handleChange}
+                   />
+        </div>
+
+        <div className="mb-3">
+            <label className="form-label">Edad:</label>
+            <input type="number"
+                   className="form-control"
+                   name="edad"
+                   value={ edad }
                    onChange ={ handleChange}
                    />
         </div>
