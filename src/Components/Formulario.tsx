@@ -16,20 +16,6 @@ export const Formulario = () => {
 
     const {email, nombre, edad} = formulario;
 
-    //const [formulario, setFormulario]= useState({
-    //  email: '',
-    //  nombre: ''
-   // });
-//
-   // const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-  //     const {name, value} = target;
-   //    
-   //    setFormulario({
-   //     ...formulario,
-   //     [ name ]: value
-   //    })
-   // }
-
   return (
     <form autoComplete="off">
         <div className="mb-3">
