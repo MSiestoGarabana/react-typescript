@@ -4,8 +4,8 @@ export const Formulario = () => {
   
 
     const [formulario, setFormulario]= useState({
-        email: '',
-        nombre: ''
+        postal: '',
+        ciudad: ''
     });
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
@@ -20,8 +20,8 @@ export const Formulario = () => {
   return (
     <form autoComplete="off">
         <div className="mb-3">
-            <label className="form-label">Email:</label>
-            <input type="email"
+            <label className="form-label">Código postal:</label>
+            <input type="text"
                    className="form-control"
                    name="email"
                    onChange={ handleChange }
@@ -30,10 +30,10 @@ export const Formulario = () => {
 
         
         <div className="mb-3">
-            <label className="form-label">Nombre:</label>
+            <label className="form-label">Ciudad:</label>
             <input type="text"
                    className="form-control"
-                   name="nombre"
+                   name="ciudad"
                    onChange ={ handleChange}
                    />
         </div>
