@@ -12,7 +12,7 @@ export const Formulario2 = () => {
   
   return (
     <form autoComplete="off">
-        <div className="mb-3">
+        <div className="mb-3 w-50">
             <label className="form-label">Código postal:</label>
             <input type="text"
                    className="form-control"
@@ -23,7 +23,7 @@ export const Formulario2 = () => {
         </div>
 
         
-        <div className="mb-3">
+        <div className="mb-3 w-50">
             <label className="form-label">Ciudad:</label>
             <input type="text"
                    className="form-control"

@@ -16,7 +16,7 @@ export const Formulario = () => {
 
   return (
     <form autoComplete="off">
-        <div className="mb-3">
+        <div className="mb-3 w-50">
             <label className="form-label">Email:</label>
             <input type="email"
                    className="form-control"
@@ -27,9 +27,9 @@ export const Formulario = () => {
         </div>
 
         
-        <div className="mb-3">
+        <div className="mb-3 w-50">
             <label className="form-label">Nombre:</label>
-            <input type="text"
+            <input  type="text"
                    className="form-control"
                    name="nombre"
                    value={ nombre }
@@ -37,7 +37,7 @@ export const Formulario = () => {
                    />
         </div>
 
-        <div className="mb-3">
+        <div className="mb-3 w-50">
             <label className="form-label">Edad:</label>
             <input type="number"
                    className="form-control"
