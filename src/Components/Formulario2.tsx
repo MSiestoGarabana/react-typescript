@@ -7,14 +7,16 @@ export const Formulario2 = () => {
     postal: 'ABC',
     ciudad: 'Ottawa'
   });
-  const {postal, ciudad} =  formulario; 
+
+  const {postal, ciudad} =  formulario;
+  
   return (
     <form autoComplete="off">
         <div className="mb-3">
             <label className="form-label">Código postal:</label>
             <input type="text"
                    className="form-control"
-                   name="email"
+                   name="postal"
                    value = { postal }
                    onChange={ handleChange }
                    />
